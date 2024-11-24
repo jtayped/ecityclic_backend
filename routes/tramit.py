@@ -11,8 +11,6 @@ def get_tramit(tramit_id):
     # Decode the ID to handle any URL-encoded characters
     decoded_id = unquote(tramit_id)
 
-    print(decoded_id)
-
     tramit = get_tramit_by_id(decoded_id)
     if tramit:
         return jsonify(tramit)
